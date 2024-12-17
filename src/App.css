@@ -1,0 +1,196 @@
+
+/* Style sa tanan */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111; 
+  color: #fff; 
+}
+
+.app {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Style */
+.header {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e50914; 
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #f40612;
+}
+
+.search-results .movie-card,
+.genre-section .movie-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-button:hover,
+.search-input:focus {
+  outline: none;
+}
+
+/* Movie Cards Style */
+.movies-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.movie-card {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 10px; 
+  background-color: #333; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.movie-poster {
+  width: 100%;
+  border-radius: 10px; 
+  height: auto;
+}
+
+.movie-title {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.movie-year {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.no-movies {
+  font-size: 1rem;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Genre Section Style */
+.genre-section {
+  margin-top: 30px;
+}
+
+.genre-title {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Search Results Style */
+.search-results {
+  margin-top: 20px;
+}
+
+.search-input,
+.search-button {
+  border-radius: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .search-input {
+    width: 250px;
+  }
+
+  .movie-card {
+    width: 150px;
+  }
+
+  .movies-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 200px;
+  }
+
+  .movie-card {
+    width: 120px;
+  }
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 8px;  
+  height: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);  
+  border-radius: 10px;  
+  transition: background-color 0.3s ease;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.6);  
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);  
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px;  
+}
+
+body, .app {
+  overflow-x: auto;  
+}
+
+
